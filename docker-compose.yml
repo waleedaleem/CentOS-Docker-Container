@@ -1,0 +1,10 @@
+version: '2'
+services:
+  mycentos:
+    build:
+      context: .
+    image: mycentos
+    volumes:
+      - ../SharedFolder:/SharedFolderdo
+    stdin_open: true
+    tty: true
