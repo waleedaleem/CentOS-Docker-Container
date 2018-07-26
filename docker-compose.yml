@@ -5,6 +5,6 @@ services:
       context: .
     image: mycentos
     volumes:
-      - ../SharedFolder:/SharedFolderdo
+      - ../SharedFolder:/sharedFolder
     stdin_open: true
     tty: true
