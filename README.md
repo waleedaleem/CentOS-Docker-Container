@@ -21,7 +21,7 @@ This is required to keep the entry point of the CentOS container (`/bin/bash`) f
 
 ## SSH into the Container
 ```
-$ docker exec -it centosdockercontainer_mycentos_1 bash
+$ docker exec -it mycentos bash
 ``` 
 
 Voila!

@@ -1,6 +1,8 @@
 version: '2'
 services:
   mycentos:
+    container_name: mycentos
+    hostname: mycentos
     build:
       context: .
     image: mycentos
