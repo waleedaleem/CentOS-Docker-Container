@@ -4,4 +4,5 @@ ENV EDITOR=vim
 ENV VISUAL=$EDITOR
 RUN set -o vi
 RUN alias ll='ls -alhtrGF'
-RUN yum install -y java-1.8.0-openjdk-devel iproute net-tools which
+RUN yum install -y java-1.8.0-openjdk-devel iproute net-tools which openssh-clients sshpass \
+        && yum clean all
