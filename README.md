@@ -26,11 +26,11 @@ $ docker exec -it mycentos bash
 
 ## One liner to use this SSH-client-equipped container to SSH into a different host
 ```
-$ function centos() {
+$ function myssh() {
     docker container run --rm -it mycentos sshpass -p password ssh -o StrictHostKeyChecking=no user@${1}
 }
 
-$ centos 10.50.30.27
+$ myssh 10.50.30.27
 ```
 
 Voila!
